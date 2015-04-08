@@ -5,16 +5,16 @@ JADE_FILES := $(shell glob-cli "templates/**/*.jade")
 STYLUS_FILES := $(shell glob-cli "styles/**/*.styl")
 
 all: js/bdsft-webrtc-styles.js js/bdsft-webrtc-templates.js symlinks
-symlinks: node_modules/bdsft-webrtc-templates.js node_modules/bdsft-webrtc-styles.js node_modules/views
+symlinks: node_modules/bdsft-webrtc-templates node_modules/bdsft-webrtc-styles node_modules/views
 
 node_modules/views: lib/views
 	mkdir -p node_modules/ && ln -sf ../lib/views node_modules/views
 
-node_modules/bdsft-webrtc-templates.js:
-	mkdir -p node_modules/ && ln -sf ../js/bdsft-webrtc-templates.js node_modules/bdsft-webrtc-templates.js
+node_modules/bdsft-webrtc-templates:
+	mkdir -p node_modules/ && ln -sf ../js/bdsft-webrtc-templates.js node_modules/bdsft-webrtc-templates
 
-node_modules/bdsft-webrtc-styles.js:
-	mkdir -p node_modules/ && ln -sf ../js/bdsft-webrtc-styles.js node_modules/bdsft-webrtc-styles.js
+node_modules/bdsft-webrtc-styles:
+	mkdir -p node_modules/ && ln -sf ../js/bdsft-webrtc-styles.js node_modules/bdsft-webrtc-styles
 
 ## Compile styles ##################################################################
 styles/css: $(STYLUS_FILES)
