@@ -8,7 +8,7 @@ all: node_modules/bdsft-webrtc-templates.js node_modules/bdsft-webrtc-styles.js 
 symlinks: node_modules/views
 
 node_modules/views: lib/views
-	ln -sf ../lib/views node_modules/views
+	mkdir -p node_modules/ && ln -sf ../lib/views node_modules/views
 
 ## Compile styles ##################################################################
 styles/css: $(STYLUS_FILES)
