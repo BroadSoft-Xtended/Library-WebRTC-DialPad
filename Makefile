@@ -4,16 +4,16 @@ PATH := node_modules/.bin:$(PATH)
 JADE_FILES := $(shell glob-cli "templates/**/*.jade")
 STYLUS_FILES := $(shell glob-cli "styles/**/*.styl")
 
-all: symlinks
+all: js/bdsft-webrtc-styles.js js/bdsft-webrtc-templates.js symlinks
 symlinks: node_modules/bdsft-webrtc-templates.js node_modules/bdsft-webrtc-styles.js node_modules/views
 
 node_modules/views: lib/views
 	mkdir -p node_modules/ && ln -sf ../lib/views node_modules/views
 
-node_modules/bdsft-webrtc-templates.js: js/bdsft-webrtc-templates.js
+node_modules/bdsft-webrtc-templates.js:
 	mkdir -p node_modules/ && ln -sf ../js/bdsft-webrtc-templates.js node_modules/bdsft-webrtc-templates.js
 
-node_modules/bdsft-webrtc-styles.js: js/bdsft-webrtc-styles.js
+node_modules/bdsft-webrtc-styles.js:
 	mkdir -p node_modules/ && ln -sf ../js/bdsft-webrtc-styles.js node_modules/bdsft-webrtc-styles.js
 
 ## Compile styles ##################################################################
