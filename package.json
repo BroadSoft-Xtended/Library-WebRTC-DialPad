@@ -4,8 +4,7 @@
   "description": "Dialpad module for webrtc client",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "make symlinks"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -22,7 +21,8 @@
     "expect": "1.6.0",
     "mocha-bamboo-reporter": "1.0.6",
     "stylus": "^0.48.1",
-    "cssmin": "0.4.2"
+    "cssmin": "0.4.2",
+    "stylus-font-face": "1.0.0"
   },
   "author": "Dominik Steiner",
   "license": "ISC"
