@@ -16,7 +16,7 @@
 
     // dialpad.jade compiled template
     templatizer["dialpad"] = function tmpl_dialpad() {
-        return '<div class="bdsft-client"><div class="dialpad"><div class="button-row"><button class="keys">1</button><button class="keys">2</button><button class="keys">3</button></div><div class="button-row"><button class="keys">4</button><button class="keys">5</button><button class="keys">6</button></div><div class="button-row"><button class="keys">7</button><button class="keys">8</button><button class="keys">9</button></div><div class="button-row"><button class="keys btn-star">*</button><button class="keys">0</button><button class="keys">#</button></div></div></div>';
+        return '<div class="bdsft-webrtc"><div class="dialpad"><div class="button-row"><button class="keys">1</button><button class="keys">2</button><button class="keys">3</button></div><div class="button-row"><button class="keys">4</button><button class="keys">5</button><button class="keys">6</button></div><div class="button-row"><button class="keys">7</button><button class="keys">8</button><button class="keys">9</button></div><div class="button-row"><button class="keys btn-star">*</button><button class="keys">0</button><button class="keys">#</button></div></div></div>';
     };
 
     return templatizer;
