@@ -2,7 +2,7 @@
 
 Displays a dialpad view.
 
-View : bdsft_webrtc.default.dialpadview
+Namespace : bdsft_webrtc.default.dialpad
 
 ## Elements
 <a name="elements"></a>
