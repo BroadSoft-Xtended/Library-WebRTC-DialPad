@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:BroadSoft-Xtended/Library-WebRTC-DialPad.git"
+    "url": "ssh://git@github.com:BroadSoft-Xtended/Library-WebRTC-DialPad"
   },
   "dependencies": {
-    "webrtc-core": "BroadSoft-Xtended/Library-WebRTC-Core.git",
-    "bdsft-sdk-view": "BroadSoft-Xtended/Library-SDK-View.git",
-    "bdsft-sdk-eventbus": "BroadSoft-Xtended/Library-SDK-Eventbus.git"
+    "webrtc-core": "BroadSoft-Xtended/Library-WebRTC-Core",
+    "bdsft-sdk-view": "BroadSoft-Xtended/Library-SDK-View",
+    "bdsft-sdk-eventbus": "BroadSoft-Xtended/Library-SDK-Eventbus"
   },
   "devDependencies": {
   },
